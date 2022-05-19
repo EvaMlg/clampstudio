@@ -1,0 +1,38 @@
+html {
+    background-color: $bg-col;
+
+
+}
+
+.main {
+   background-color: $bg-col;
+
+
+}
+
+.logodiv {
+  display : none;
+
+
+
+    
+@include tablet {
+    border-left :  1px solid white;;
+    display : block;
+    background-color: $bg-col;
+    background-image: url('/wp-content/themes/newtheme/src/assets/img/LOGO_VF_201021.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position : fixed;
+    right: 0;
+    z-index: 1;
+
+    width: 45vw;
+    height: 100vh;
+
+}
+
+    
+
+}

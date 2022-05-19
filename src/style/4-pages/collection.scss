@@ -1,0 +1,75 @@
+.left-slit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    .logodiv {
+        display : none;
+    }
+    img {
+        border-top : 1px solid white;
+        border-left :1px solid white;
+        border-right :1px solid white;
+
+    }
+
+    .credits
+    {
+        border-top : 1px solid white;
+        border-left :1px solid white;
+        border-right :1px solid white;
+    }
+    
+    @include tablet {
+        width: 55vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+    
+        img:nth-child(odd){
+            border-left : 1Px solid white;
+            border-top:1px solid white;
+            width: 100%;
+            grid-column: 1;
+        }
+    
+        img:nth-child(even){
+            border-left : 1px solid white;
+            border-top: 1px solid white;
+            width: 100%;
+            grid-column: 2;
+        }
+    }
+    @include laptopS {
+        width: 55vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    
+        img:nth-child(odd){
+            border-left : 1Px solid white;
+            border-top:1px solid white;
+            width: 100%;
+            grid-column: 1;
+        }
+    
+        img:nth-child(even){
+            border-left : 1px solid white;
+            border-top: 1px solid white;
+            width: 100%;
+            grid-column: 2;
+        }
+
+}
+    
+  
+
+
+    .credits {
+        @include p-p;
+        grid-column: 1/3;
+        grid-row: 4;
+        padding-left: 30vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+}

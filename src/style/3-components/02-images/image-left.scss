@@ -1,0 +1,72 @@
+// TAILE DES IMAGES : PAS OK, BUG JE NE SAIS PAS POURQUOI
+
+
+// UNIQUEMENT POUR L'IMAGE DE GAUCHE
+
+// POUR L'ENSEMBLE DE LA SECTION
+.image {
+    background-color: $sec-col-light;
+}
+
+
+// CONTAINER IMAGE + TEXTE
+.image-container {
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+    }
+
+    @include laptopS {
+        padding-right: 2 * $dCol;
+        padding-left: 2 * $dCol;
+
+    }
+
+    // CONTAINER IMAGE
+    .image-wrapper {
+
+        overflow: hidden;
+
+        width: 200vw; // TAILLE DE L'IMAGE MOBILE
+        height: 100vw;
+
+        @include tablet {
+            width: 100vw; // TAILLE DE L'IMAGE à partir de tablette
+            height: 40vw; // TAILLE DE L'IMAGE
+        }
+
+        @include laptopS {
+            width: 300px; // TAILLE DE L'IMAGE à partir de laptop S
+            height: 300px; // TAILLE DE L'IMAGE
+        }
+
+        >img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            object-fit: cover;
+        }
+
+    }
+
+    // CONTAINER TEXT
+    .image-text-wrapper {
+
+        @include tablet {}
+
+
+
+        p,
+        h2,
+        span {
+
+            text-align: center;
+
+        }
+
+    }
+
+
+
+}

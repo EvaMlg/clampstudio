@@ -1,0 +1,177 @@
+// TITLE BIG //
+
+$titlebig-fsize-m : 70px; // <====== Fill with mobile font size
+$titlebig-lheight-m : 100%;
+$titlebig-fsize-t : 70px; // <====== Fill with tablet font size
+$titlebig-lheight-t : 100%;
+$titlebig-fsize-ls : 70px; // <====== Fill with laptop S font size
+$titlebig-lheight-ls : 100%;
+$titlebig-fsize-ll : 70px; // <====== Fill with laptop L font size
+$titlebig-lheight-ll : 100%;
+
+
+@mixin title-big {
+    @include title-font;
+    color: $pri-col;
+    font-size: $titlebig-fsize-m;
+    line-height: $titlebig-lheight-m;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: $titlebig-fsize-t;
+        line-height: $titlebig-lheight-t;
+        
+    }
+
+    @include laptopS {
+        font-size: $titlebig-fsize-ls;
+        line-height: $titlebig-lheight-ls;
+    }
+
+    @include laptopL {
+        font-size: $titlebig-fsize-ll;
+        line-height: $titlebig-lheight-ll;
+    }
+}
+
+// TITLE SMALL //
+
+$titlesmall-fsize-m : 40px; // <====== Fill with mobile font size
+$titlesmall-lheight-m : normal;
+$titlesmall-fsize-t : 40px; // <====== Fill with tablet font size
+$titlesmall-lheight-t : normal;
+$titlesmall-fsize-ls : 40px; // <====== Fill with laptop S font size
+$titlesmall-lheight-ls : normal;
+$titlesmall-fsize-ll : 40px; // <====== Fill with laptop L font size
+$titlesmall-lheight-ll : normal;
+
+
+@mixin title-small {
+    @include title-font;
+    color: $pri-col;
+    font-size: $titlesmall-fsize-m;
+    line-height: $titlesmall-lheight-m;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: $titlesmall-fsize-t;
+        line-height: $titlesmall-lheight-t;
+    }
+
+    @include laptopS {
+        font-size: $titlesmall-fsize-ls;
+        line-height: $titlesmall-lheight-ls;
+    }
+
+    @include laptopL {
+        font-size: $titlesmall-fsize-ll;
+        line-height: $titlesmall-lheight-ll;
+    }
+}
+
+
+// SUBTITLE SMALL //
+
+$subtitle-fsize-m : 40px; // <====== Fill with mobile font size
+$tsubtitle-lheight-m : normal;
+$subtitle-fsize-t : 40px; // <====== Fill with tablet font size
+$subtitle-lheight-t : normal;
+$subtitle-fsize-ls : 40px; // <====== Fill with laptop S font size
+$subtitle-lheight-ls : normal;
+$subtitle-fsize-ll : 40px; // <====== Fill with laptop L font size
+$subtitle-lheight-ll : normal;
+
+
+@mixin subtitle {
+    @include subtitle-font;
+    color: $pri-col;
+    font-size: $subtitle-fsize-m;
+    line-height: $subtitle-lheight-m;
+
+    @include tablet {
+        font-size: $subtitle-fsize-t;
+        line-height: $subtitle-lheight-t;
+    }
+
+    @include laptopS {
+        font-size: $subtitle-fsize-ls;
+        line-height: $subtitle-lheight-ls;
+    }
+
+    @include laptopL {
+        font-size: $subtitle-fsize-ll;
+        line-height: $subtitle-lheight-ll;
+    }
+}
+
+// PARAGRAPH //
+
+$p-fsize-m : 17px; // <====== Fill with mobile font size
+$p-lheight-m : normal;
+$p-fsize-t : 17px; // <====== Fill with tablet font size
+$p-lheight-t : normal;
+$p-fsize-ls : 17px; // <====== Fill with laptop S font size
+$p-lheight-ls : normal;
+$p-fsize-ll : 17px; // <====== Fill with laptop L font size
+$p-lheight-ll : normal;
+
+
+@mixin p-p {
+    @include p-font;
+    color: $pri-col;
+    font-size: $p-fsize-m;
+    line-height: $p-lheight-m;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: $p-fsize-t;
+        line-height: $p-lheight-t;
+    }
+
+    @include laptopS {
+        font-size: $p-fsize-ls;
+        line-height: $p-lheight-ls;
+    }
+
+    @include laptopL {
+        font-size: $p-fsize-ll;
+        line-height: $p-lheight-ll;
+    }
+}
+
+// BUTTON //
+
+$b-fsize-m : 11px; // <====== Fill with mobile font size
+$b-lheight-m : normal;
+$b-fsize-t : 11px; // <====== Fill with tablet font size
+$b-lheight-t : normal;
+$b-fsize-ls : 11px; // <====== Fill with laptop S font size
+$b-lheight-ls : normal;
+$b-fsize-ll : 11px; // <====== Fill with laptop L font size
+$b-lheight-ll : normal;
+
+
+@mixin p-button {
+    @include button-font;
+    color: $pri-col;
+    font-size: $b-fsize-m;
+    line-height: $b-lheight-m;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: $b-fsize-t;
+        line-height: $b-lheight-t;
+    }
+
+    @include laptopS {
+        font-size: $b-fsize-ls;
+        line-height: $b-lheight-ls;
+    }
+
+    @include laptopL {
+        font-size: $b-fsize-ll;
+        line-height: $b-lheight-ll;
+    }
+}
+

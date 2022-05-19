@@ -1,0 +1,194 @@
+// Bouton coupon 
+
+.showcoupon {
+    color : black;
+    text-decoration : underline;
+}
+.checkout_coupon {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    @include laptopS {
+        width: 55vw;
+        
+    }
+    button {
+        @include bouton-on;
+        margin-top: 1vh;
+        width : 100%;
+        padding : 6px;
+    }
+
+}
+.woocommerce .checkout {
+    @include laptopS {
+    width: 55vw;
+    
+}
+}
+
+
+
+.woocommerce-billing-fields__field-wrapper {
+    padding-top: 3vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+
+    .form-row {
+        margin-top: 1.5vh;
+    }
+}
+
+
+
+.woocommerce-info {
+    @include p-p;
+
+}
+
+.woocommerce form {
+
+    h3 {
+        @include title-small;
+
+
+    }
+
+    @include p-p;
+
+    input {
+        @include bouton-off;
+        border-radius: 50px;
+        padding: 6px;
+        padding-left: 2vw;
+        width: 100%;
+
+    }
+
+    select {
+        @include bouton-off;
+        border-radius: 50px;
+        padding: 6px;
+        padding-left: 2vw;
+        width: 100%;
+
+    }
+
+    .select2-selection {
+        @include bouton-off;
+
+        ul li {
+            background-color: red;
+        }
+
+
+    }
+
+    .select2-results__option {
+        @include p-p
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        padding-left: 2vw;
+
+    }
+
+
+  
+
+}
+
+.woocommerce-additional-fields {
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+
+    .woocommerce-input-wrapper {
+        
+        textarea {
+        resize: none;
+        @include bouton-off;
+        border-radius : 20px;
+        padding: 6px;
+        padding-left: 2vw;
+        
+        width: 100%;
+        height: 10vh;
+        }
+
+    }
+
+   h3 {
+        display: none;
+    } 
+}
+
+// Menu déroulant Pays
+
+.select2-results__options {
+    @include p-p;
+    background-color: $bg-col;
+    
+}
+
+.select2-search__field {
+    background-color: $bg-col;
+
+}
+
+.select2-dropdown {
+    background-color: $bg-col;
+
+}
+
+// Your Checkout
+
+.woocommerce-checkout-review-order {
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+
+}
+
+
+.woocommerce-NoticeGroup {
+
+}
+
+.back-to-store {
+    text-decoration : underline;
+    color : black;
+    a {
+        color : black;
+
+    }
+}
+
+
+        #place_order {
+        margin-top : 3vh;
+        margin-bottom : 3vh;
+        @include bouton-on;
+        background-color :  #FEFBD8;
+        height : 10vh;
+        width: 100%;
+    }
+
+
+    .woocommerce-checkout-review-order {
+
+        .shop_table {
+            @include bouton-off;
+            margin-top : 2vh;
+            margin-bottom : 2vh;
+            padding : 6px;
+            padding-left: 2vw;
+            width : 100%;
+            text-align : left;
+        }
+    
+    }
+

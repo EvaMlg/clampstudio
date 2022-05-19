@@ -1,0 +1,434 @@
+.wc-tabs-wrapper {
+    display: none;
+}
+
+.product_meta {
+    display: none;
+
+}
+
+/* --------------------------- SCREEN SPLIT : PART RIGHT -------------------------------------- */
+/* Screen split : right part */
+.right-scroll {
+    display: none;
+
+    @include laptopS {
+        display: block;
+        z-index: 2;
+        position: fixed;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+
+    }
+}
+
+.woocommerce-product-gallery__wrapper {
+    img {width: 80%;
+    height: auto;}
+
+}
+
+@include laptopS {
+    .right-scroll {
+        float: right;
+        width: 45vw;
+
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+}
+
+/* --------------------------- SCREEN SPLIT : PART LEFT -------------------------------------- */
+
+
+
+.cl-product-info {
+   
+
+    .entry-summary {
+        border-right: $border;
+
+        .cl-wrapper {
+            @include tablet {
+                display: flex;
+            }
+
+            .woo-wrapper {
+                padding-left: 5vw;
+                padding-right: 5vw;
+                padding-bottom: 2vh;
+                @include tablet {
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+
+                width: 50%; }
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    display: none;
+                }
+            }
+
+            .buttons-wrapper {
+                padding-left: 5vw;
+                padding-right: 5vw;
+                padding-bottom: 2vh;
+
+
+
+                @include tablet {width: 50%;
+                padding-top: 2vh;
+                padding-left: 2vw;
+                padding-right: 2vw;
+                }
+
+                display: flex;
+                justify-content: space-between;
+
+
+                a {
+                    text-decoration : none;
+                    color : #b3b3b3;
+                }
+               
+
+            }
+        }
+
+       
+
+
+
+        .product_title {
+            order : 1;
+            padding-left: 2vw;
+            padding-right: 2vh;
+
+            @include laptopS {
+                padding-left: 2vw;
+                padding-right: 0;
+                padding-top: 1vw;
+            }
+        }
+
+
+        .price {
+            order : 2;
+            padding-left: 2vw;
+            padding-right: 2vh;
+
+            @include laptopS {
+                padding-left: 2vw;
+                padding-right: 0;
+            }
+        }
+
+        .woocommerce-product-details__short-description {
+            order : 3;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+
+            @include laptopS {
+                padding-left: 2vw;
+                padding-right: 2vw;
+            }
+        }
+
+
+
+
+        .color-button-1 {
+            button {
+                @include bouton-on;
+                align-self: center;
+                justify-self: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 17px;
+                padding-right: 17px;
+                height: 160px;
+            }
+            
+
+            button:hover {
+                @include bouton-off;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 17px;
+                padding-right: 17px;
+                height: 160px;
+            }
+            
+
+
+        }
+
+        .color-button-2 {
+            button {
+                @include bouton-on;
+                align-self: center;
+                justify-self: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 17px;
+                padding-right: 17px;
+                height: 160px;
+            }
+
+            button:hover {
+                @include bouton-off;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 17px;
+                padding-right: 17px;
+                height: 160px;
+            }
+
+
+
+        }
+
+        .color-button-3 {
+            button {
+                @include bouton-on;
+                align-self: center;
+                justify-self: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 17px;
+                padding-right: 17px;
+                height: 160px;
+            }
+
+        
+
+            button:hover {
+                @include bouton-off;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 17px;
+                padding-right: 17px;
+                height: 160px;
+            }
+            
+
+        }
+
+
+        .cart {
+            order : 4;
+            .single_add_to_cart_button {
+                margin-left: 2vw;
+                margin-right: 2vw;
+                margin-bottom: 2vh;
+                margin-top : 2vh;
+            
+                width: 90%;
+                order : 2;
+                align-self: center;
+                justify-self: center;
+                @include bouton-on;
+                padding-top: 22px;
+                padding-bottom: 22px;
+            }
+
+            .single_add_to_cart_button:hover {
+                @include bouton-off;
+                padding-top: 22px;
+                padding-bottom: 22px;
+            }
+
+            .added_to_cart {
+                display: none
+            }
+
+        }
+
+        .nude-mode {
+
+
+            .nude-mode-button {
+                @include bouton-rond-on;
+            }
+
+            .nude-mode-button:hover {
+                @include bouton-rond-off;
+
+            }
+
+        }
+
+        .input-text .qty {
+            @include bouton-off;
+
+        }
+
+
+
+    }
+
+    background-color: $bg-col;
+    z-index: 2;
+    position: relative;
+
+
+    .product_title {
+        @include title-small;
+    }
+
+    p {
+        @include p-p;
+    }
+
+    @include laptopS {
+        top: 70vh;
+        width: 55vw;
+        height: 100vh;
+    }
+
+
+    .related {
+        width: 50vw;
+        display: block;
+        border: none;
+        display: none;
+
+    }
+
+    .up-sells {
+        border-top: $border;
+        display: block;
+        padding-bottom: 2vh;
+
+        h2 {
+            padding-top: 1vh;
+            @include p-p;
+            text-align: center;
+        }
+    }
+
+
+
+}
+
+
+
+// SWIPERS & NUDE-MODE
+
+.left-fixed {
+    z-index: 2;
+    ;
+
+
+    @include laptopS {
+        position: absolute;
+        top: 0;
+    }
+
+}
+
+
+.swiper-slide {
+    img {
+        border-top: $border;
+        border-left: $border;
+        border-bottom: $border;
+        width: 100vw;
+        height: auto;
+
+    }
+
+}
+
+
+.left-swiper {
+    overflow: scroll;
+    z-index: 2;
+    position: relative;
+
+
+
+    @include tablet {
+        img {
+            width: 50vw;
+            height: auto;
+
+        }
+    }
+
+
+
+    @include laptopS {
+        top: 0;
+        width: 55vw;
+        height: 70vh;
+        border-right: $border;
+        display: inline-block;
+
+            img {
+                height: 100%;
+                width: auto;
+
+            }
+
+        }
+    }
+
+
+
+
+
+.nakedSwiper {
+    display: none;
+    overflow: scroll;
+    z-index: 1;
+    position: relative;
+
+
+    @include tablet {
+        img {
+            width: 50vw;
+            height: auto;
+
+        }
+    }
+
+    @include laptopS {
+        bottom: 0;
+        width: 55vw;
+        height: 70vh;
+        border-right: $border;
+
+    
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+
+        }
+
+
+    }
+
+
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    border : 0px;
+
+}

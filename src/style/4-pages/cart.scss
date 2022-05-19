@@ -1,0 +1,240 @@
+.container-cart {
+    position: relative;
+    margin-left: 55vw;
+    height: 100vh;
+
+    border-left: 2px solid white;
+
+
+    img {
+        width: 10vw;
+        height: auto;
+    }
+
+    .checkout-button {
+        @include bouton-menu;
+        padding: 20px;
+    }
+
+
+
+
+
+
+    .cart_item {
+        @include p-p;
+
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 5;
+
+
+
+
+
+
+        .product-remove {
+
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .product-thumbnail {
+
+            grid-column: 1;
+            grid-row: 1/6;
+        }
+
+        .product-name {
+
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .product-price {
+
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .product-quantity {
+
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        .product-subtotal {
+
+            grid-column: 2;
+            grid-row: 5;
+        }
+    }
+}
+
+
+
+
+.xoo-wsc-cart-active .xoo-wsc-opac {
+
+    background-color: $bg-col;
+
+}
+
+.xoo-wsc-container {
+    border-left: 2px solid white;
+}
+
+.xoo-wsch-basket {
+    display: none;
+}
+
+.xoo-wsch-text {
+    @include title-small;
+    text-align: left;
+
+}
+
+.xoo-wsc-sm-info {
+    @include p-p;
+}
+
+.xoo-wscb-icon {
+    display: none;
+}
+
+.xoo-wsc-icon-bag2 {
+    display: none;
+}
+
+.xoo-wscb-count {
+    display: none;
+}
+
+span.xoo-wsch-text {
+    margin-left: 0;
+}
+
+.xoo-wsc-product {
+    display: flex;
+    border-bottom: 0;
+}
+
+
+.xoo-wsc-footer {
+
+
+    .xoo-wsc-ft-amt-subtotal {
+        @include title-small;
+
+
+        xoo-wsc-ft-amt-value {
+            @include title-small;
+
+        }
+
+
+    }
+
+    .xoo-wsc-ft-buttons-cont a {
+        @include bouton-menu;
+        border: 0;
+
+
+    }
+
+}
+
+.xoo-wsc-container {
+    z-index: 2;
+    width: 100%;
+
+    @include tablet {
+        width: 45.2vw !important;
+    }
+
+
+}
+
+xoo-wsc-cart-active {
+    right: 0px !important;
+}
+
+/* .xoo-wsc-cart-active {
+    margin-top: 1.5vw;
+    @include bouton-on;
+    color: #b3b3b3;
+    right: 1vw !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+} */
+
+.xoo-wsc-basket {
+    @include bouton-menu;
+    color: #b3b3b3;
+    right: 1vw !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 12px; 
+
+    margin-right: 30px;
+    margin-top: 25px;
+
+    @include laptopS {
+
+        margin-right: 20px;
+        margin-top: 25px;
+       
+    }
+
+
+}
+
+.xoo-wsc-icon-basket1::before {
+    margin-top: 1.5vw;
+    content: "Cart";
+    color: #b3b3b3;
+    @include p-button;
+    color: #b3b3b3;
+    right: 1vw !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+
+}
+
+
+
+// Filtre d'opacité 
+
+.xoo-wsc-cart-active {
+    .xoo-wsc-opac {
+
+        opacity: 0.0;
+
+        @include tablet {
+            opacity: 0.7;
+
+            width: 55vw;
+        }
+    }
+}
+
+.xoo-wsc-empty-cart {
+    @include p-p;
+}
+
+.xoo-wsc-product {
+    margin-right: 2vw;
+}
+
+.xoo-wsc-ft-btn {
+    display: none;
+}
+
+.xoo-wsc-ft-btn-cart {
+    display: none;
+}

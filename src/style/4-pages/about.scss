@@ -1,0 +1,10 @@
+.about-content {
+    @include p-p;
+    width: 55vw;
+    padding: 2.5vh;
+
+
+    h1 {
+        @include title-small;
+    }
+}

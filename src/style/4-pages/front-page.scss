@@ -1,0 +1,48 @@
+.left-side {
+
+  .logodiv {
+    display: none;
+  }
+
+  @include tablet {
+    .logodiv {
+      display: block;
+    }
+/* 
+    width: 55vw;
+    z-index: 1;
+    display: flex;
+    float: left;
+    overflow: hidden;
+ */
+  }
+
+}
+
+.front-page-image {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+}
+
+@include tablet {
+  .front-page-image {
+    height: 100vh;
+    width: 55vw;
+   
+    img {
+    object-fit: cover;
+     
+    }
+  }
+
+  }

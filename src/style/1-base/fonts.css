@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "CountachBold";
+  src: url("/wp-content/themes/newtheme/src/assets/fonts/countachweb-bold-TRIAL.woff") format("woff"); }
+@font-face {
+  font-family: "CountachRegular";
+  src: url("/wp-content/themes/newtheme/src/assets/fonts/countachweb-regular-TRIAL.woff") format("woff"); }
+@font-face {
+  font-family: "VT323";
+  src: url("/wp-content/themes/newtheme/src/assets/fonts/VT323-Regular.woff") format("woff"); }
+@font-face {
+  font-family: "PxGrotesk";
+  src: url("/wp-content/themes/newtheme/src/assets/fonts/PxGrotesk-Regular.woff") format("woff"); }
+
+/*# sourceMappingURL=fonts.css.map */

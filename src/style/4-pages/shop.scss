@@ -1,0 +1,141 @@
+// SHOP PAGE
+
+.page-title {
+    display: none;
+}
+
+
+.woocommerce-result-count {
+    display: none;
+}
+
+.woocommerce-ordering {
+    display: none;
+
+}
+
+.attachment-woocommerce_thumbnail {
+    img {
+        height: 100%;
+    }
+}
+
+// PRODUCT GRID
+.products {
+    z-index: 2;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    @include tablet {
+        grid-template-columns: 2fr 2fr;
+        width: 100vw;
+    }
+
+    @include laptopS {
+        grid-template-columns: 2fr 2fr;
+        width: 55vw;
+    }
+
+    .product {
+
+        .woocommerce-loop-product__title {
+            @include p-p;
+            text-align: center;
+
+        }
+
+        .amount {
+            @include p-p;
+            text-align: center;
+        }
+
+        .button {
+            display: none;
+        }
+
+        img {
+
+            padding-left: 4vh;
+            padding-right: 4vh;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: auto;
+
+            @include tablet {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                max-height: auto;
+            }
+
+
+
+        }
+
+        .price {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    h2,
+    a {
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+
+    @include laptopS {}
+}
+
+.products .product img {
+    width: auto;
+
+}
+
+
+
+.woocommerce-pagination {
+
+    @include laptopS {
+        width: 55vw;
+        
+    }
+
+
+
+    .page-numbers {
+        @include title-small;
+        padding-top: 5vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            padding-right : 1vh;
+            padding-left : 1vh;
+            color: black;
+        }
+
+        .prev {
+            padding-left : 2vh;
+            padding-right : 2vh;
+            @include p-p;
+        }
+        .next {
+            padding-right : 2vh;
+            padding-left : 2vh;
+            @include p-p;
+        }
+    }
+    }
+

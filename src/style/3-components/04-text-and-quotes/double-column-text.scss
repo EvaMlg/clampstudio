@@ -1,0 +1,32 @@
+.double-column-text {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+
+    @include tablet {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+    }
+
+    .double-column-title{
+        
+        
+        @include tablet {
+            text-align: center;
+           
+
+        }
+    }
+
+    @include tablet {
+
+    .columns {
+        column-count: 2;
+        column-gap: 50px; 
+    }
+
+}
+
+
+}

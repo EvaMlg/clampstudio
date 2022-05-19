@@ -1,0 +1,60 @@
+// 1- BASE
+@import "./1-base/reset.scss";
+@import "./1-base/colors.scss";
+@import "./1-base/grid.scss";
+@import "./1-base/mixins.scss";
+@import "./1-base/mediaqueries.scss";
+@import "./1-base/fonts.scss";
+@import "./1-base/typography.scss";
+@import "./1-base/background.scss";
+@import "./1-base/border.scss";
+
+
+
+
+
+// 2- MOLECULES
+@import "./2-molecules/cta.scss";
+@import "./2-molecules/bouton.scss";
+
+
+// 3- COMPONENTS 
+    // 01-header
+@import "./3-components/01-header/header-navigation-hero.scss";
+    // 02-images
+@import "./3-components/02-images/big-image-slider.scss";
+@import "./3-components/02-images/image-left.scss";
+@import "./3-components/02-images/image-right.scss";
+    // 03-cards
+@import "./3-components/03-cards/cards.scss";
+    // 04-text and quotes
+@import "./3-components/04-text-and-quotes/double-column-text.scss";
+@import "./3-components/04-text-and-quotes/list.scss";
+@import "./3-components/04-text-and-quotes/numbers.scss";
+@import "./3-components/04-text-and-quotes/quote-slider.scss";
+@import "./3-components/04-text-and-quotes/quote-with-background.scss";
+@import "./3-components/04-text-and-quotes/simple-quote.scss";
+    // 05-news
+@import "./3-components/05-news/news-cards.scss";
+    // 06-contact
+@import "./3-components/06-contact/contact-cta.scss";
+    // 07-footer
+@import "./3-components/07-footer/footer-navigation.scss";
+
+
+
+// 4- PAGES
+@import "./4-pages/shop.scss";
+@import "./4-pages/single-product.scss";
+@import "./4-pages/front-page.scss";
+@import "./4-pages/cart.scss";
+@import "./4-pages/checkout.scss";
+@import "./4-pages/collection.scss";
+@import "./4-pages/savoir-faire.scss";
+@import "./4-pages/about.scss";
+@import "./4-pages/entretien.scss";
+
+
+
+
+
